@@ -1,3 +1,4 @@
+sudo dnf config-manager --set-enabled powertools plus devel
 sudo dnf install epel-release
 sudo dnf install \
 git \
