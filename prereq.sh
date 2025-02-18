@@ -1,4 +1,3 @@
-sudo /usr/bin/crb enable
 sudo dnf install epel-release
 sudo dnf install \
 git \
