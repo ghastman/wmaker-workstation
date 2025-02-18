@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=TwoStepsBack
+Comment=An NeXTSTEP look theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=TwoStepsBack

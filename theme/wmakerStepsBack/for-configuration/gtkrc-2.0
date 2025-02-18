@@ -1,0 +1,5 @@
+gtk-theme-name = "TwoStepsBack"
+gtk-can-change-accels = 1
+gtk-icon-theme-name = "jp-icons"
+gtk-menu-images=1
+gtk-button-images=1

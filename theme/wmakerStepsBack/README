@@ -1,0 +1,54 @@
+TwoStepsBack
+Jean-Pierre Bucciol
+21 juin 2024
+
+
+TwoStepsBack is a Gtk 2, 3 and 4 theme with the NeXTSTEP look. It's a trivial unification of the themes GTK-GNUstep (gtk2), WMStep (gtk3) and OneStepBack (gtk4), all GPL open sources. I only made a few modifications for a better match. Don't expect any spectacular results. I don't think I'll go any further, but who knows ?
+
+
+INSTALLATION :
+
+- Unzip the archive in ~/.local/share/themes
+
+
+ACTIVATION :
+
+- Add in ~/.gtkrc-2.0 : gtk-theme-name = "TwoStepsBack"
+
+- Add in ~/.bashrc or ~/.profile : export GTK_THEME="TwoStepsBack"
+
+- Launch in a terminal : gsettings set org.gnome.desktop.interface gtk-theme 'TwoStepsBack'
+
+- QT applications : install qt5-styleplugins, qt5ct, qt6gtk2 and qt6ct, launch qt5ct and qt6ct and configure them to use the styles gtk2 and qt6gtk2.
+
+- You will probably need to restart your window manager or X session.
+
+
+
+SETTINGS :
+
+If you use a native window manager instead of gnome-shell, you might want to always display a titlebar for the Gnome applications using the infamous Client-Side Decorations. In this case, you may want to remove an occurrence of the Close, Maximize, and Minimize buttons that otherwise appear duplicates. To do this, insert in ~/config/gtk-3.0/settings.ini and ~/config/gtk-4.0/settings.ini : gtk-decoration-layout= (blank after the equal sign). Templates of these files are provided in the directory for-configuration in the main directory.
+
+
+LIMITATIONS :
+
+The result with gnome-shell and mutter is bad because of the difficulty to obtain consistency for the headerbar decorations across the different versions of gtk.
+
+
+LICENCE :
+
+This is GPL free software, of course !
+
+
+REFERENCES :
+
+- GTK-GNUstep : https://www.gnome-look.org/p/1079490/
+- WMStep : https://github.com/mgsander/wmstep
+- OneStepBack : http://www.vide.memoire.free.fr/pages/onestepback/onestepback.php
+
+AUTHORS :
+
+Jean-Pierre Bucciol jpsmail(at)free.fr
+
+
+%%nocomments
