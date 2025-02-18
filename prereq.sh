@@ -8,4 +8,4 @@ libXext-devel libXft-devel libXinerama-devel libXmu-devel libXpm-devel libXrandr
 ImageMagick-devel automake chrpath fontconfig-devel gettext-devel giflib-devel libICE-devel libSM-devel libX11-devel \
 libpng-devel libtiff-devel libtool pango-devel xorg-x11-proto-devel  \
 xterm dbus chromium  \
-gcc-c++ libGL-devel libGLU-devel libXcursor-devel libXfixes-devel libXi-devel 
+gcc-c++ libGL-devel libGLU-devel libXcursor-devel libXfixes-devel libXi-devel intltool startup-notification-devel
