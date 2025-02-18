@@ -1,4 +1,4 @@
-sudo dnf config-manager --set-enabled powertools plus devel
+sudo dnf config-manager --set-enabled powertools plus
 sudo dnf install epel-release
 sudo dnf group install base-x
 sudo dnf install \
