@@ -29,6 +29,9 @@ rpmbuild -bb ~/Workspace/RPMbuild/SPECS/WindowMaker.spec
 rpmbuild -ba ~/Workspace/RPMbuild/SPECS/WindowMaker.spec  
 
 ## Install the built WindowMaker RPM
+sudo dnf install ~/Workspace/RPMbuild/RPMS/x86_64/WINGs-libs-0.96.0-3.el8.x86_64.rpm
 sudo dnf install ~/Workspace/RPMbuild/RPMS/x86_64/WindowMaker-0.96.0-3.el8.x86_64.rpm
+
+
 
 
