@@ -13,7 +13,13 @@ git config --global credential.helper store
 
 ## Clone this repo locally  
 mkdir ~/Workspace   
-git clone https://github.com/ghastman/wmaker-workstation.git ~/workspace/wmaker-workstation
+git clone https://github.com/ghastman/wmaker-workstation.git ~/Workspace/wmaker-workstation
+
+## Add needed repositories
+sh ~/Workspace/wmaker-workstation/00-enable.repos
+
+
+
 
 ## RPM Build Tools  
 Validate ~/.rpmmacros is in place and set correctly   
