@@ -1,43 +1,36 @@
-# wmaker-workstation
+# Install Steps  
+From a fresh install of Rocky 8.10 server  
 
-# Icons
-GNUstep https://www.gnome-look.org/p/1239539
-https://github.com/alexmyczko/gnustep-icons
-https://github.com/gnustep/icons-rik
+## Get base updates done  
+sudo dnf update  
 
-Chicago 95 https://github.com/grassmunk/Chicago95
-Chicago 95 Ectras https://github.com/grassmunk/Chicago95_Extras
+## Get git working  
+sudo dnf install git  
+git config --global user.name "My Name"  
+git config --global user.email "myemail@example.com"  
+git config --global init.defaultBranch main  
+git config --global credential.helper store  
 
-https://kojipkgs.fedoraproject.org//packages/WindowMaker/0.96.0/3.fc40/src/WindowMaker-0.96.0-3.fc40.src.rpm
+## Clone this repo locally  
+mkdir ~/Workspace   
+git clone https://github.com/ghastman/wmaker-workstation.git ~/Workspace/wmaker-workstation  
 
-Get a spec file to build the RPM from, or create one
-In this case we are going to use a Fedora spec file to start with.
-https://koji.fedoraproject.org/koji/buildinfo?buildID=2367182
-Get the file WindowMaker-0.96.0-3.fc40.src.rpm
+## Add needed repositories  
+sh ~/Workspace/wmaker-workstation/00-enable.repos  
 
-Extract the spec file
-rpm2cpio WindowMaker-0.96.0-3.fc40.src.rpm | cpio -idmv
+## Install packages  
+sh ~/Workspace/wmaker-workstation/10-install-packages.sh  
 
-Set up RPM build tools
-https://www.redhat.com/sysadmin/create-rpm-package
-sudo dnf install -y rpmdevtools rpmlint
-rpmdev-setuptree
+## Install Window Maker from this repo  
+sh ~/Workspace/wmaker-workstation/20-install-wmaker.sh  
 
-Copy spec file from Fedora src RPM, put in ~/rpmbuild/SPECS
-Copy source file from GitHub src tgz, put in ~/rpmbuild/Sources
+## Copy X related startup scripts
+cp ~/Workspace/wmaker-workstation/home/.xinitrc ~  
+cp ~/Workspace/wmaker-workstation/home/.Xdefaults ~  
 
-Build WindowMaker
-rpmlint ~/rpmbuild/SPECS/WindowMaker.spec 
+## Start X  
+startx  
 
-rpmbuild -bs ~/rpmbuild/SPECS/WindowMaker.spec 
-rpmbuild -bb ~/rpmbuild/SPECS/WindowMaker.spec
-rpmbuild -ba ~/rpmbuild/SPECS/WindowMaker.spec
 
-Install Window Maker build dependancies
 
-sudo dnf install libXext-devel libXft-devel libXinerama-devel libXmu-devel libXpm-devel libXrandr-devel libXrender-devel libjpeg-devel 
-sudo dnf install  ImageMagick-devel automake chrpath fontconfig-devel gettext-devel giflib-devel libICE-devel libSM-devel libX11-devel 
-sudo dnf install  libpng-devel libtiff-devel libtool pango-devel xorg-x11-proto-devel 
 
-Ready to install RPM lives in  ~/rpmbuild/RPMS/x86_64/WindowMaker-0.96.0-0.el8.x86_64.rpm
-sudo dnf install ~/rpmbuild/RPMS/x86_64/WindowMaker-0.96.0-0.el8.x86_64.rpm
