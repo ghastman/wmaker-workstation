@@ -28,7 +28,6 @@ sh ~/Workspace/wmaker-workstation/20-install-wmaker.sh
 cp ~/Workspace/wmaker-workstation/home/.xinitrc ~  
 cp ~/Workspace/wmaker-workstation/home/.Xdefaults ~  
 
-
 ## RPM Build Tools  
 Validate ~/.rpmmacros is in place and set correctly   
 rpmdev-setuptree  
