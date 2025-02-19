@@ -14,7 +14,13 @@ sudo dnf install chromium codium
 # Visual Studio Code - free as in beer
 # code or code-insiders
 sudo dnf install code 
+# Mozilla Firefox
+sudo dnf install firefox
 # Google Chrome
 sudo dnf install https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 # Keyring
 sudo dnf install gnome-keyring seahorse
+# File Manager
+sudo dnf install Thunar thunar-archive-plugin thunar-volman 
+# Basic tools
+ sudo dnf install mousepad ristretto file-roller
