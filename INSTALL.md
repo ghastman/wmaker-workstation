@@ -25,8 +25,8 @@ sh ~/Workspace/wmaker-workstation/10-install-packages.sh
 sh ~/Workspace/wmaker-workstation/20-install-wmaker.sh  
 
 ## Copy X related startup scripts
-cp ~/Workspace/wmaker-workstation/home/.xinitrc ~
-cp ~/Workspace/wmaker-workstation/home/.Xdefaults ~
+cp ~/Workspace/wmaker-workstation/home/.xinitrc ~  
+cp ~/Workspace/wmaker-workstation/home/.Xdefaults ~  
 
 
 ## RPM Build Tools  
