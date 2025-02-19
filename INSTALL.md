@@ -1,7 +1,8 @@
 # Install Steps  
+From a fresh install of Rocky 8.10 server  
 
 ## Get base updates done  
-sudo dnf update
+sudo dnf update  
 
 ## Get git working  
 sudo dnf install git  
