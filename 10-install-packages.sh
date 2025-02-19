@@ -16,3 +16,5 @@ sudo dnf install chromium codium
 sudo dnf install code 
 # Google Chrome
 sudo dnf install https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+# Keyring
+sudo dnf install gnome-keyring seahorse
