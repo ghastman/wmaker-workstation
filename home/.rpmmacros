@@ -1,2 +1,0 @@
-%packager YourName
-%_topdir %{getenv:HOME}/Workspace/RPMbuild

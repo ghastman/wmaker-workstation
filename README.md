@@ -21,7 +21,17 @@ sh ~/Workspace/wmaker-workstation/00-enable.repos
 ## Install packages  
 sh ~/Workspace/wmaker-workstation/10-install-packages.sh  
 
-## Install Window Maker from this repo  
+## Prepare RPM build directory
+Create the RPM build tree  
+rpmdev-setuptree  
+
+Copy rpmbuild tree from this repo to the build tree  
+cp -r ~/Workspace/wmaker-workstation/rpmbuild/ ~  
+
+## Build Window Maker RPM
+sh ~/rpmbuild/build-wmaker.sh
+
+## Install Window Maker from the built RPM
 sh ~/Workspace/wmaker-workstation/20-install-wmaker.sh  
 
 ## Copy X related startup scripts
