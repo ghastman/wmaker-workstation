@@ -21,6 +21,6 @@ sudo dnf install https://dl.google.com/linux/direct/google-chrome-stable_current
 # Keyring
 sudo dnf install gnome-keyring seahorse
 # File Manager
-sudo dnf install Thunar thunar-archive-plugin thunar-volman 
+sudo dnf install Thunar thunar-archive-plugin
 # Basic tools
  sudo dnf install mousepad ristretto file-roller
