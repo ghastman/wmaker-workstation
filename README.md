@@ -58,7 +58,7 @@ git clone https://github.com/grassmunk/Chicago95.git
 mkdir  ~/.local/share/icons  
 cp -r ~/Workspace/Chicago95/Icons/* ~/.local/share/icons/  
 
-### Get the Propaganda nackgrounds
+### Get the Propaganda backgrounds
 cd ~/Workspace  
 git clone https://github.com/BenjaminHCCarr/PropagandaTiles.git
 cp ~/Workspace/PropagandaTiles/Images/* ~/GNUstep/Library/WindowMaker/Backgrounds/
