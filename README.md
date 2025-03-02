@@ -22,10 +22,10 @@ sh ~/Workspace/wmaker-workstation/00-enable.repos
 sh ~/Workspace/wmaker-workstation/10-install-packages.sh  
 
 ## Prepare RPM build directory
-Create the RPM build tree  
+### Create the RPM build tree  
 rpmdev-setuptree  
 
-Copy rpmbuild tree from this repo to the build tree  
+### Copy rpmbuild tree from this repo to the build tree  
 cp -r ~/Workspace/wmaker-workstation/rpmbuild/ ~  
 
 ## Build Window Maker RPM
@@ -40,6 +40,33 @@ cp ~/Workspace/wmaker-workstation/home/.Xdefaults ~
 
 ## Start X  
 startx  
+
+## Minor Tweaks  
+### Set default term app for XFCE apps
+echo -e "TerminalEmulator=xterm\n" | tee ~/.config/xfce4/helpers.rc > /dev/null  
+
+### Set GTK theme to a NeXTSTEP/Window Maker style
+mkdir  ~/.local/share/themes  
+cp -R ~/Workspace/wmaker-workstation/theme/wmakerStepsBack/ ~/.local/share/themes/.  
+cp -R ~/Workspace/wmaker-workstation/home/.config ~  
+cp ~/Workspace/wmaker-workstation/home/.gtkrc-2.0 ~  
+cp ~/Workspace/wmaker-workstation/home/.xsessionrc ~ 
+
+### Set Icon theme to Chicago95
+cd ~/Workspace  
+git clone https://github.com/grassmunk/Chicago95.git  
+mkdir  ~/.local/share/icons  
+cp -r ~/Workspace/Chicago95/Icons/* ~/.local/share/icons/  
+
+### Get the Propaganda nackgrounds
+cd ~/Workspace  
+git clone https://github.com/BenjaminHCCarr/PropagandaTiles.git
+cp ~/Workspace/PropagandaTiles/Images/* ~/GNUstep/Library/WindowMaker/Backgrounds/
+
+
+
+ 
+
 
 
 

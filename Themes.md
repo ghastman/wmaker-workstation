@@ -6,7 +6,9 @@ https://github.com/alexmyczko/gnustep-icons
 https://github.com/gnustep/icons-rik  
 
 Chicago 95 https://github.com/grassmunk/Chicago95  
-Chicago 95 Ectras https://github.com/grassmunk/Chicago95_Extras  
+Chicago 95 Extras https://github.com/grassmunk/Chicago95_Extras  
 
-https://kojipkgs.fedoraproject.org//packages/WindowMaker/0.96.0/3.fc40/src/WindowMaker-0.96.0-3.fc40.src.rpm  
+# Backgrounds
+https://github.com/BenjaminHCCarr/PropagandaTiles  
+
 

@@ -23,4 +23,8 @@ sudo dnf install gnome-keyring seahorse
 # File Manager
 sudo dnf install Thunar thunar-archive-plugin
 # Basic tools
- sudo dnf install mousepad ristretto file-roller
+sudo dnf install mousepad ristretto file-roller
+# Terminus font
+sudo dnf install terminus-fonts
+# Eclipse IDE
+sudo dnf install eclipse-platform
