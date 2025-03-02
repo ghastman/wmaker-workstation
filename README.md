@@ -1,4 +1,4 @@
-# Install Steps  
+I'm# Install Steps  
 From a fresh install of Rocky 8.10 server  
 
 ## Get base updates done  
@@ -42,6 +42,10 @@ cp ~/Workspace/wmaker-workstation/home/.Xdefaults ~
 startx  
 
 ## Minor Tweaks  
+
+### VirtualBox extensions
+https://www.virtualbox.org/manual/ch04.html  
+
 ### Set default term app for XFCE apps
 echo -e "TerminalEmulator=xterm\n" | tee ~/.config/xfce4/helpers.rc > /dev/null  
 
